@@ -1,29 +1,35 @@
+html {
+    background: #b3b3b3;
+    padding: 15px;
+    border: 5px solid white;
+    margin: 15px;
+    height: 2000px;
+}
+
 body {
-    font-family: sans-serif;
-}
-
-nav {
-    margin-bottom: 16px;
     background: #fa923f;
-    padding: 8px 0;
-}
-
-a {
-    text-decoration: none;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 0;
+  }
+  
+.parent {
+    background: white;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 0;
+  }
+  
+.parent div {
+    background: rgb(105, 105, 109);
     color: white;
+    padding: 10px;
+    border: 5px solid black;
     margin: 10px;
 }
 
-a.active {
-    color: #521751;
-}
-
-.main-section {
-    height: 800px;
-    border: 1px solid #ccc;
-    padding: 16px;
-}
-
-.highlighted {
-    border: 2px solid #fa923f;
+.parent .child-1{
+    position:relative;
+    top: 180px;
+    right:50px;
 }
