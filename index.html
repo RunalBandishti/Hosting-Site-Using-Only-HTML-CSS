@@ -1,16 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="main.css">
-        <title>Position</title>
-    </head>
-    <body>
-        <div class="parent">
-            <div class="child-1">Navigation Bar</div>
-            <div class="child-2">Background Image</div>
-            <div class="child-3">Features</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>uHost</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div>
+            <a href="index.html" class="main-header__brand">
+                uHost
+            </a>
         </div>
-    </body>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="packages/index.html">Packages</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="customers/index.html">Customers</a>
+                </li>
+                <li class="main-nav__item main-nav__item--cta">
+                    <a href="start-hosting/index.html">Start Hosting</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="product-overview">
+            <h1>Get the freedom you deserve.</h1>
+        </section>
+        <section id="plans">
+            <h1 class="section-title">Choose Your Plan</h1>
+            <div class="plan-list">
+                <article class="plans">
+                    <h1 class="plan-title">FREE</h1>
+                    <h2 class="plan-price">$0/month</h2>
+                    <h3>For hobby projects or small teams.</h3>
+                    <ul class="plan-features">
+                        <li>1 Workspace</li>
+                        <li>Unlimited Traffic</li>
+                        <li>10GB Storage</li>
+                        <li>Basic Support</li>
+                    </ul>
+                    <div>
+                        <button class="button">CHOOSE PLAN</button>
+                    </div>
+                </article>
+                <article class="plans plus">
+                    <h1 class="recommended">RECOMMENDED</h1>
+                    <h1 class="plan-title">PLUS</h1>
+                    <h2 class="plan-price">$29/month</h2>
+                    <h3>For ambitious projects.</h3>
+                    <ul class="plan-features">
+                        <li>5 Workspaces</li>
+                        <li>Unlimited Traffic</li>
+                        <li>100GB Storage</li>
+                        <li>Plus Support</li>
+                    </ul>
+                    <div>
+                        <button class="button">CHOOSE PLAN</button>
+                    </div>
+                </article>
+                <article class="plans">
+                    <h1 class="plan-title">PREMIUM</h1>
+                    <h2 class="plan-price">$99/month</h2>
+                    <h3>Your enterprise solution.</h3>
+                    <ul class="plan-features">
+                        <li>10 Workspaces</li>
+                        <li>Unlimited Traffic</li>
+                        <li>Unlimited Storage</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <div>
+                        <button class="button">CHOOSE PLAN</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+            <section id="features">
+            <h1 class="section-title">Many Good Reasons to Stick Around</h1>
+            <ul class="feature-list">
+                <li class="key-feature">
+                    <div class="key-image"> 
+
+                    </div>
+                    <p class="description">3,857,000 Trusting Customers</p>
+                </li>
+                <li class="key-feature">
+                    <div class="key-image">
+
+                    </div>
+                    <p class="description">99.999% Uptime Guarantee</p>
+                </li>
+                <li class="key-feature">
+                    <div class="key-image">
+
+                    </div>
+                    <p class="description">Lightning Fast CDN</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <nav>
+            <ul class="footerss">
+                <li class="footer-link">
+                    <a href="#">Support</a>
+                </li>
+                <li class="footer-link">
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
 </html>
