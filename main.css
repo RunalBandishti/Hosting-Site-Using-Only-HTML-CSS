@@ -1,121 +1,131 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-}
-
 #product-overview {
-    background: url("freedom.jpg");
-    width: 100%;
-    height: 528px;
-    padding: 10px;   
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box,
+    #ff1b68;
+  /* background-image: url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% bottom 20%; */
+  /* background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
+  /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0,0,0,0.5)); */
+  /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
+  width: 100%;
+  height: 528px;
+  padding: 10px;
+  margin-top: 43px;
+  /* border: 5px dashed red; */
+  position: relative;
 }
 
 .section-title {
-    color: #2ddf5c;
-    text-align: center;
+  color: #2ddf5c;
+  text-align: center;
 }
 
 #product-overview h1 {
-    color: white;
-    font-family: 'Anton', sans-serif;
+  color: white;
+  font-family: "Anton", sans-serif;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
 }
 
-.plan-list{
-    width:80%;
-    margin:auto;
-    text-align: center;
-}
-.plans {
-    background:lightgreen;
-    text-align:center;
-    padding:16px;
-    margin: 8px;
-    display: inline-block;
-    width:30%;
-    vertical-align: middle;
-    border-radius:10px;
-
-}   
-
-.plus{
-    background:#19b84c;
-    color: white;
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
-    border-radius:10px;
+.plan__list {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
-.recommended{
-    background:wheat;
-    color:#19b84c;
-    padding:8px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-    border-radius:5px;
+.plan {
+  background: #d5ffdc;
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
 }
 
-.plan-title{
-    color:#0e4f1f;
-
+.plan--highlighted {
+  background: #19b84c;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.plan-price{
-    color:rgb(67, 67, 67);
+.plan__annotation {
+  background: white;
+  color: #19b84c;
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 
-.plan-features{
-    list-style: none;
-    margin:0;
-    padding:0;
+.plan__title {
+  color: #0e4f1f;
 }
 
-.plan-features li{
-    margin: 8px 0;
+.plan__price {
+  color: #858585;
 }
 
-
-#features{
-    background:rgba(243, 63, 63, 0.83);
-    margin-top:50px;
-    padding: 16px   ;
+.plan--highlighted .plan__title {
+  color: white;
 }
 
-#features .section-title{
-    color: white;
-    margin: 30px;
-
+.plan--highlighted .plan__price {
+  color: #0e4f1f;
 }
 
-.feature-list{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-weight: bold;
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.key-feature{
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+.plan__feature {
+  margin: 8px 0;
 }
 
-.key-image{
-    background:#ffcede;
-    width:128px;
-    height:128px;
-    border: 2px solid grey;
-    border-radius:50%;
-    margin: 0 auto;
+#key-features {
+  background: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
 }
 
-.description{
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    font-size:20px;
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.key-feature__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
 }
 
 /* h1 {

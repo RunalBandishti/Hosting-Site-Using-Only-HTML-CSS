@@ -10,12 +10,14 @@ body {
 .main-header {
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     background: #2ddf5c;
     padding: 8px 16px;
     z-index: 1;
 }
 
-.main-header>div {
+.main-header > div {
     display: inline-block;
     vertical-align: middle;
 }
@@ -25,7 +27,14 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
+    height: 22px;
+    /* width: 20px; */
+    display: inline-block;
+}
 
+.main-header__brand img {
+    height: 100%;
+    /* width: 100%; */
 }
 
 .main-nav {
@@ -73,52 +82,51 @@ body {
     border: none;
 }
 
-.button {
-    background: #0e4f1f;
-    color: wheat;
-    font: inherit;
-    border: 1.5px solid #0e4f1f;
-    padding: 5px;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.button:hover {
-    color: black;
-    background: white;
-}
-
-.button:focus {
-    outline: none;
-}
-
-
 .main-footer {
     background: black;
-    padding: 25px;
+    padding: 32px;
     margin-top: 48px;
 }
 
-.footerss {
+.main-footer__links {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.footer-link {
-    margin: 0 16px;
+.main-footer__link {
     display: inline-block;
-
+    margin: 0 16px;
 }
 
-.footer-link a {
-    color: wheat;
+.main-footer__link a {
+    color: white;
     text-decoration: none;
 }
 
-.footer-link a:hover,
-.footer-link a:active {
-    color: yellowgreen;
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #ccc;
+}
+
+.button {
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.button:focus {
+    outline: none;
 }
