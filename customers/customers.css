@@ -16,12 +16,12 @@
     width: 65%;
     display: inline-block;
     vertical-align: middle;
-    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+    box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   }
 
-  .testimonial__image {
+  .testimonial__image{
     width: 100%;
-    vertical-align: top;
+    vertical-align:bottom;
   }
   
   .testimonial__info {
