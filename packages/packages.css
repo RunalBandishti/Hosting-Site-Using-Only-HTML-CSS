@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("anonymousPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("anonymousPro-Bold.ttf");
+    font-weight: 700;
+}
+
 main {
     padding-top: 2rem;
 }
@@ -51,9 +62,10 @@ main {
 .package__info {
     padding: 1rem;
     border: 1px solid #0e4f1f;
-    font-size: 1.2rem;
     color: #0e4f1f;
     background: white;
+    font-size: 1.2rem;
+    /* font-style font-variant font-weight font-size/line-height font-family*/
 }
 
 .clearfix {
@@ -89,24 +101,25 @@ main {
     color: #bbb;
 }
 
- @media (min-width: 40rem){
+@media (min-width: 40rem) {
     main {
-    margin: 3rem auto;
-    max-width: 1500px;
-}
+      max-width: 1500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
- @media (min-width: 1500px){
-   .package{
-        border-left:4px solid #0e4f1f;
-        
+@media (min-width: 1500px) {
+    .package {
+      border-left: 4px solid #0e4f1f;
     }
-    #free{
-        border-right:4px solid #0e4f1f;
+
+    #free {
+      border-right: 4px solid #0e4f1f;
     }
-    
+
     #free:hover,
     #free:active {
-        border-left-color: #ff5454;
+      border-right-color: #ff5454;
     }
 }
