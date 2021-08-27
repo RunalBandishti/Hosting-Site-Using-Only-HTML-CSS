@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+:root {
+  --dark-green: #0e4f1f;
+  --highlight-color: #ff1b68;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -106,7 +111,7 @@ main {
 .main-nav__item a,
 .mobile-nav__item a {
   text-decoration: none;
-  color: #0e4f1f;
+  color: var(--dark-green);
   font-weight: bold;
   padding: 0.2rem 0;
 }
@@ -118,13 +123,13 @@ main {
 }
 
 .main-nav__item--cta {
-  animation: wiggle 200ms 3s 8 forwards ;
+  animation: wiggle 400ms 3s 8 ease-out none;
 }
 
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
-  background: #ff1b68;
+  background: var(--highlight-color);
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
@@ -133,7 +138,7 @@ main {
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
-  color: #ff1b68;
+  color: var(--highlight-color);
   background: white;
   border: none;
 }
@@ -212,10 +217,10 @@ main {
 }
 
 .button {
-  background: #0e4f1f;
+  background: var(--dark-green, #0e4f1f);
   color: white;
   font: inherit;
-  border: 1.5px solid #0e4f1f;
+  border: 1.5px solid var(--dark-green);
   padding: 0.5rem;
   border-radius: 8px;
   font-weight: bold;
@@ -225,7 +230,7 @@ main {
 .button:hover,
 .button:active {
   background: white;
-  color: #0e4f1f;
+  color: var(--dark-green);
 }
 
 .button:focus {
@@ -258,9 +263,9 @@ main {
 
 @keyframes wiggle {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotateZ(0);
   }
-  50%{
+  50% {
     transform: rotateZ(-10deg);
   }
   100% {

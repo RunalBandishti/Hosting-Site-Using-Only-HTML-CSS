@@ -4,6 +4,7 @@ var modalNoButton = document.querySelector(".modal__action--negative");
 var selectPlanButtons = document.querySelectorAll(".plan button");
 var toggleButton = document.querySelector(".toggle-button");
 var mobileNav = document.querySelector(".mobile-nav");
+var ctaButton = document.querySelector(".main-nav__item--cta");
 
 // console.dir(backdrop.style['background-image']);
 
@@ -53,3 +54,14 @@ toggleButton.addEventListener("click", function() {
   }, 10);
 });
 
+ctaButton.addEventListener('animationstart', function(event) {
+  console.log('Animation started', event);
+})
+
+ctaButton.addEventListener('animationend', function(event) {
+  console.log('Animation ended', event);
+})
+
+ctaButton.addEventListener('animationiteration', function(event) {
+  console.log('Animation iteration', event);
+})
