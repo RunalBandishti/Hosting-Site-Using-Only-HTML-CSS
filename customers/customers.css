@@ -12,14 +12,17 @@ main {
   }*/
 
   .testimonial__image-container {
-    width: 100%;
+    width: 60%;
     max-width: 40rem;
     box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+    transform: skew(20deg);
+    overflow: hidden;
   }
 
   .testimonial__image {
     width: 100%;
     vertical-align: top;
+    transform: skew(-20deg) scale(1.4);
   }
   
   .testimonial__info {
@@ -65,22 +68,18 @@ main {
     .testimonial {
       margin: 3rem auto;
       max-width: 1500px;
-      display:flex;
+      display: flex;
       align-items: center;
       justify-content: space-around;
     }
 
     .testimonial__image-container {
-     
       width: 66%;
     }
 
     .testimonial__info {
-      display: inline-block;
-      vertical-align: middle;
       width: 30%;
     }
-    
   }
   
   

@@ -6,25 +6,39 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  display: grid;
+  grid-template-rows: 3.5rem auto fit-content(8rem);
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  /* padding-top: 3.5rem; */
+  height: 100%;
 }
 
 main {
-  min-height: calc(100vh - 3.5rem - 8rem);
-  margin-top: 3.5rem;
+  /* grid-row: 2 / 3; */
+  grid-area: main;
 }
 
 .backdrop {
-  position: fixed;
   display: none;
+  position: fixed;
+  opacity: 0;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.2s linear;
 }
 
 .main-header {
@@ -34,7 +48,7 @@ main {
   left: 0;
   background: #2ddf5c;
   padding: 0.5rem 1rem;
-  z-index: 51;
+  z-index: 60;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,7 +80,6 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  /* height: 2.5rem; */
   /* width: 20px; */
 }
 
@@ -136,21 +149,20 @@ main {
   background: black;
   padding: 2rem;
   margin-top: 3rem;
+  /* grid-row: 3 / 4; */
+  grid-area: footer;
 }
 
 .main-footer__links {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 
 .main-footer__link {
-  display: block;
   margin: 0.5rem 0;
 }
 
@@ -179,13 +191,12 @@ main {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 0;
-  /* text-align: center; */
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
@@ -226,15 +237,17 @@ main {
 
 .open {
   display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 @media (min-width: 40rem) {
   .main-footer__link {
     margin: 0 1rem;
   }
+
   .main-footer__links {
     flex-direction: row;
-    align-items: center;
     justify-content: center;
   }
 }
