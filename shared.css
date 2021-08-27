@@ -11,14 +11,13 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   display: grid;
   grid-template-rows: 3.5rem auto fit-content(8rem);
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
   /* padding-top: 3.5rem; */
   height: 100%;
 }
@@ -118,6 +117,10 @@ main {
   border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+  animation: wiggle 200ms 3s 8 forwards ;
+}
+
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
@@ -177,7 +180,7 @@ main {
 }
 
 .mobile-nav {
-  display: none;
+  transform: translateX(-100%);
   position: fixed;
   z-index: 101;
   top: 0;
@@ -185,6 +188,7 @@ main {
   background: white;
   width: 80%;
   height: 100vh;
+  transition: transform 300ms ease-out;
 }
 
 .mobile-nav__items {
@@ -233,12 +237,12 @@ main {
   border: #a1a1a1;
   background: #ccc;
   color: #a1a1a1;
-}
+} 
 
 .open {
-  display: block !important;
-  opacity: 1 !important;
-  transform: translateY(0) !important;
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 @media (min-width: 40rem) {
@@ -249,5 +253,17 @@ main {
   .main-footer__links {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50%{
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
   }
 }

@@ -11,6 +11,14 @@ main {
     margin: auto;
   }*/
 
+  #customer-1 .testimonial__image-container{
+    animation: flip-customer 1s ease-out forwards;
+  }
+
+  #customer-2rem .testimonial__image-container{
+    animation: flip-customer 1s ease-out forwards;
+  }
+
   .testimonial__image-container {
     width: 60%;
     max-width: 40rem;
@@ -82,4 +90,17 @@ main {
     }
   }
   
+
+  @keyframes flip-customer{
+    0%{
+      transform: rotateY(0deg) skew(20deg);
+
+    }
+    50%{
+      transform: rotateY(160deg) skew(20deg);
+    }
+    100%{
+      transform: rotateY(360deg) skew(20deg);
+    }
+  }
   
